@@ -22,10 +22,12 @@ function applyUserSettings() {
   const userData = loadFromStorage('userData')
   if (!userData) return
 
-  const { bgColor, txtColor, vod, bot } = userData
+  const { bgColor, txtColor, bod, bot } = userData
 
   document.body.style.backgroundColor = bgColor
   document.body.style.color = txtColor
+  document.querySelector('#birth-date').value = bod
+  document.querySelector('#birth-time').value = bot
 
   document.querySelector('#background-color').value = bgColor
   document.querySelector('#text-color').value = txtColor

@@ -4,10 +4,24 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
   <title>Document</title>
 </head>
 
-<body>
+<body onload="applyUserSettings()">
+
+  <header>
+    <h1>Maps</h1>
+    <a href="index.html"><button><i class="fa fa-home"></i> Home</button></a>
+    <a href="user-settings.html"><button><i class="fas fa-cog"></i> Settings</button></a>
+    <a href="map.html"><button><i class="fas fa-map"></i> Maps</button></a>
+  </header>
+
+
+  <script src="js/utillService.js"></script>
+  <script src="js/userService.js"></script>
+  <script src="js/placeService.js"></script>
 
 </body>
 
