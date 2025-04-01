@@ -5,15 +5,28 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/user-settings.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
   <title>User Settings</title>
 </head>
 
 <body>
+  <header>
+    <h1>User Settings</h1>
+    <a href="index.html"><button><i class="fa fa-home"></i> Home</button></a>
+    <a href="user-settings.html"><button><i class="fas fa-cog"></i> Settings</button></a>
+    <a href="map.html"><button><i class="fas fa-map"></i> Maps</button></a>
+  </header>
 
   <form id="user-settings" onsubmit="onSubmit(event)">
-    <input type="color">
+    <label for="background-color">Background - Color: </label><input type="color" name="background-color"
+      id="background-color"><br>
+    <label for="text-color">Text - Color: </label><input type="color" name="text-color" id="text-color"><br>
+    <label for="birth-date">Birth - Date: </label><input type="date" name="birth-date" id="birth-date"><br>
+    <label for="birth-time">Birth - time: </label><input type="time" name="birth-time" id="birth-time"><br>
+    <button type="submit">Submit</button>
   </form>
 
+  <script src="js/utillService.js"></script>
   <script src="js/userService.js"></script>
 </body>
 
